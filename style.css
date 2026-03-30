@@ -1,0 +1,247 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+/* yaha likh sakte ho */
+.typing{
+  color:red;
+  font-size:22px;
+  min-height:30px;
+}
+body{
+  
+  background:#050505;
+  color:white;
+}
+
+
+header {
+    width: 100%;
+    padding: 20px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 34px;
+    font-weight: 700;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+nav a.active {
+    background-color: red  !important;
+    color: white !important;
+    box-shadow: 0 0 18px red !important;
+}
+
+nav a:hover {
+    background-color: red;
+    color: white;
+    box-shadow: 0 0 18px red;
+}
+/* HERO */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:80px;
+}
+
+.left h2{
+  color:red;
+  height:30px;
+  margin-top:10px;
+}
+
+.btn{
+  margin-top:20px;
+  padding:10px 20px;
+  border:1px solid red;
+  border-radius:20px;
+  background:transparent;
+  color:white;
+}
+
+.btn.red{
+  background:red;
+}
+
+.btn:hover{
+  box-shadow:0 0 15px red;
+}
+
+/* IMAGE */
+.image-box{
+  width:250px;
+  height:250px;
+  border-radius:50%;
+  border:4px solid red;
+  box-shadow:0 0 40px red;
+  overflow:hidden;
+}
+
+.image-box img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* SECTION */
+.section{
+  padding:80px;
+  text-align:center;
+}
+
+/* CARDS */
+.cards{
+  display:flex;
+  justify-content:center;
+  margin-top:30px;
+}
+
+.card{
+  margin:10px;
+  padding:20px;
+  border:1px solid red;
+  border-radius:10px;
+}
+
+.card:hover{
+  box-shadow:0 0 15px red;
+}
+
+/* SKILLS */
+
+ /* ===== SKILLS SECTION ===== */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.skill {
+    text-align: center;
+}
+
+/* Circle Style */
+.circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 0 20px red;
+}
+
+/* Inner dark circle */
+.circle::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #0d0d0d;
+    border-radius: 50%;
+}
+
+/* Percentage text */
+.circle span {
+    position: relative;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+}
+
+/* Skill Name */
+.skill h3 {
+    margin-top: 18px;
+    font-size: 22px;
+    color: white;
+}
+
+/* Skill Progress Fill */
+.c {
+    background: conic-gradient(red 90%, #222 0%);
+}
+
+.cpp {
+    background: conic-gradient(red 75%, #222 0%);
+}
+
+.html {
+    background: conic-gradient(red 85%, #222 0%);
+}
+
+.css {
+    background: conic-gradient(red  80%, #222 0%);
+}
+
+/* CONTACT */
+.contact-links{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+.contact-btn{
+  padding:10px 20px;
+  border:1px solid red;
+  border-radius:20px;
+  text-decoration:none;
+  color:white;
+}
+
+.contact-btn:hover{
+  background:red;
+  box-shadow:0 0 15px red;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .cards, .projects{
+    flex-direction:column;
+  }
+}
